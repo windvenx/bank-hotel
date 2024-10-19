@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: sans-serif;
+}
+form{
+    width: 400px;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(78, 78, 232);
+}
+.timer {
+  width: 30px;
+  border-radius: 5px;
+  height: 25px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.796);
+}
+.time__start {
+  border-radius: 10px;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  width: 110px;
+  height: 30px;
+  background-color: rgba(76, 188, 248, 0.492);
+}
+h5 {
+  color: rgba(0, 0, 0, 0.419);
+}
+.box__top {
+  align-items: center;
+  justify-content: space-between;
+  /* width: 400px; */
+  padding: 20px;
+  display: flex;
+  background-color: aliceblue;
+  border-radius: 8px 8px 0 0;
+}
+.box {
+  padding: 20px;
+  background-color: aliceblue;
+  display: flex;
+  /* align-items: center; */
+  justify-content: left;
+  height: 250px;
+  /* width: 400px; */
+}
+label {
+  display: flex;
+  margin-top: 20px;
+}
+p {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+.progress {
+  width: 100%;
+  background-color: rgb(177, 55, 24);
+  overflow: hidden;
+}
+.progress__line {
+  width: 100%;
+  height: 6px;
+  transform: scaleX(0);
+  /* transform-origin: left; */
+  transition: transform 0.5s;
+  background: green;
+  
+}
+h1{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.686);
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+.box__bottom{
+    padding: 20px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.popup{
+  width: 200px;
+  height: 291px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 19px 4px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  border-radius: 20px;
+  z-index: 10;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #2B2B2B;
+  color: white;
+  text-align: center;
+  display: none;
+}
+
+
+.close{
+  margin-left: 50px;
+  background: red;
+}
+button:hover{
+  cursor: pointer;
+}
+  
+
+.popup.active{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+

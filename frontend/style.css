@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+button{
+    height: 76px;
+    width: 76px;
+
+    transition: 1s;
+}
+
+button:hover{
+    transform: scale(1.5) rotate(360deg);
+    border-radius: 50%;
+
+}
